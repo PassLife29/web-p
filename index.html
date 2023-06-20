@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = 'ko'>
+    <head>
+        <meta name = "vieport" content = "width = device-width, user-scalable = no" >
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <title>MoiReVoid's WepPage</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var isHidden = sidebar.classList.contains("hide-sidebar");
+            
+            if (isHidden) {
+                sidebar.classList.remove("hide-sidebar");
+            } else {
+                sidebar.classList.add("hide-sidebar");
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <div id = 'sidebar' class = 'sidebar hide-sidebar'>  <!--왼쪽 사이드 바-->
+            <image class = 'sidebarimage' src = 'image/투명)줄3개.png' onclick="toggleSidebar()"></image>
+            <div>
+                <image class = 'image' src = "image/MoiReVoid's instar QR.png"></image>
+            </div>
+        </div>
+
+        <div>
+            <image class = 'sidebarimage' src = 'image/줄3개.png' onclick="toggleSidebar()"></image>
+        </div>
+    </body>
+</html>
